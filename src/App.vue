@@ -3,15 +3,15 @@
         <div>
             <x-header :right-options="{showMore: true}" @on-click-more="showMenus = true">暖心商家</x-header>
             <div v-transfer-dom>
-                <actionsheet :menus="menus" v-model="showMenus" show-cancel></actionsheet>
+                <actionsheet :menus="menus" v-model="showMenus" show-cancel @on-click-menu="changeLocale"></actionsheet>
             </div>
         </div>
 
+
         <router-view></router-view>
 
-
         <tabbar class="vux-demo-tabbar" icon-class="vux-center" slot="bottom">
-            <tabbar-item :link="{path:'/'}" badge="8">
+            <tabbar-item :link="{path:'/'}" :badge=countsellerdui>
                 <span class="iconfontyyy vux-demo-tabbar-icon-home" slot="icon"
                       style="position:relative;top: 0; font-size: 24px">&#xe68e;</span>
                 <span slot="label">点餐队列</span>
@@ -45,7 +45,6 @@
     Cell,
     TransferDomDirective as TransferDom
   } from 'vux'
-
   export default {
     name: 'app',
     directives: {
@@ -66,18 +65,16 @@
     data () {
       return {
         menus: {
-          menu1: 'Take Photo',
-          menu2: 'Choose from photos'
+          menu1: '历史订单',
+          menu2: '未完成订单'
         },
-        showMenus: false
+        showMenus: false,
+        countsellerdui: '9'
       }
     },
     methods: {
-      test () {
-        console.log(123)
-      },
-      isTabbarDemo () {
-        return console.log(1)
+      changeLocale (data) {
+        console.log(data)
       }
     }
 
@@ -125,6 +122,7 @@
     body {
         background-color: #fbf9fe;
     }
+
     .weui-tabbar {
         position: absolute;
     }
