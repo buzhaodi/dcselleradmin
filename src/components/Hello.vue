@@ -70,7 +70,7 @@
     .item-wrapper {
         position: absolute;
         width: 100%;
-        height: 84%;
+        height: 90%;
         overflow: hidden;
     }
 </style>

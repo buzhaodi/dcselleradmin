@@ -23,7 +23,7 @@
                 <span slot="label"><span>添加菜品</span></span>
             </tabbar-item>
 
-            <tabbar-item :link="{path:'/project/donate'}" show-dot>
+            <tabbar-item :link="{path:'/sellerseting'}" show-dot>
                 <span class="iconfontyyy" slot="icon" style="font-size: 24px">&#xe624;</span>
                 <span slot="label">店铺设置</span>
             </tabbar-item>
@@ -45,6 +45,7 @@
     Cell,
     TransferDomDirective as TransferDom
   } from 'vux'
+
   export default {
     name: 'app',
     directives: {

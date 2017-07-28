@@ -4,15 +4,42 @@ import Vue from 'vue'
 import FastClick from 'fastclick'
 import VueRouter from 'vue-router'
 import App from './App'
-import Home from './components/HelloFromVux'
+// 首页组件
+import Home from './components/Hello.vue'
+// 商家设置页组件
+import Sellersetting from './components/Sellersetting/Sellersetting'
+// 商家分类页面
+import Typecontroller from './components/Sellersetting/Typecontroller/Typecontroller.vue'
 import vuexI18n from 'vuex-i18n'
 import Vuex from 'vuex'
+// plugins
+import {
+  AjaxPlugin,
+  AlertPlugin,
+  BusPlugin,
+  ConfirmPlugin,
+  DatetimePlugin,
+  DevicePlugin,
+  LoadingPlugin,
+  LocalePlugin,
+  ToastPlugin,
+  WechatPlugin
+} from 'vux'
+
 Vue.use(Vuex)
 Vue.use(VueRouter)
 
 const routes = [{
   path: '/',
   component: Home
+},
+{
+  path: '/sellerseting',
+  component: Sellersetting
+},
+{
+  path: '/sellerseting/Typecontroller',
+  component: Typecontroller
 }]
 
 const router = new VueRouter({
@@ -54,9 +81,6 @@ store.registerModule('vux', {
 })
 
 Vue.use(vuexI18n.plugin, store)
-
-// plugins
-import { BusPlugin, DatetimePlugin, LocalePlugin, DevicePlugin, ToastPlugin, AlertPlugin, ConfirmPlugin, LoadingPlugin, WechatPlugin, AjaxPlugin } from 'vux'
 
 Vue.use(DevicePlugin)
 Vue.use(ToastPlugin)
