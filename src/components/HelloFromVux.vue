@@ -1,109 +1,76 @@
 <template>
-    <div>
+    <div class="item-wrapper" ref="wrapper">
+        <ul>
+            <group>
+                <cell title="Total" value="￥1024"></cell>
+                <cell-form-preview :list="list"></cell-form-preview>
 
+            </group>
 
+            <group>
+                <cell title="Total" value="￥1024"></cell>
+                <cell-form-preview :list="list"></cell-form-preview>
 
+            </group>
+            <group>
+                <cell title="Total" value="￥1024"></cell>
+                <cell-form-preview :list="list"></cell-form-preview>
 
+            </group>
+            <group>
+                <cell title="Total" value="￥1024"></cell>
+                <cell-form-preview :list="list"></cell-form-preview>
+
+            </group>
+        </ul>
     </div>
 </template>
 
 <script>
-  import { TransferDom, Actionsheet, Group, XSwitch, Toast } from 'vux'
+  import {CellFormPreview, Cell, TransferDom, Actionsheet, Group, XSwitch, Toast} from 'vux'
+  import Bscroll from '../../node_modules/better-scroll'
 
   export default {
     components: {
       Actionsheet,
       Group,
       XSwitch,
-      Toast
+      Toast,
+      CellFormPreview,
+      Cell
     },
     directives: {
       TransferDom
     },
+    created () {
+      this.$nextTick(() => {
+        this.itmescroll = new Bscroll(this.$refs['wrapper'], {
+          click: true
+        })
+      })
+    },
     data () {
       return {
-        show1: false,
-        menus1: {
-          menu1: 'Share to friends',
-          menu2: 'Share to timeline'
-        },
-        show2: false,
-        menus2: {
-          menu1: 'Take Photo',
-          menu2: 'Choose from photos'
-        },
-        show3: false,
-        show4: false,
-        show5: false,
-        show6: false,
-        show7: false,
-        show8: false,
-        menus5: [{
-          label: 'actionsheet header',
-          type: 'info'
+        list: [{
+          label: 'Apple',
+          value: '3.29'
         }, {
-          label: 'Primary',
-          type: 'primary',
-          value: 'primary'
+          label: 'Banana',
+          value: '1.04'
         }, {
-          label: 'Warn',
-          type: 'warn'
-        }, {
-          label: 'Disabled',
-          type: 'disabled'
-        }, {
-          label: 'Default'
-        }],
-        menu7: {
-          menu1: '北京烤鸭',
-          menu2: '陕西油泼面',
-          menu3: '西安肉夹馍'
-        },
-        showSuccess: false,
-        menus3: {
-          'title.noop': 'actionsheet header',
-          delete: '<span style="color:red">Delete</span>'
-        },
-        menus8: {
-          menu1: 'Close me',
-          menu2: 'Close me'
-        }
-      }
-    },
-    created () {
-
-    },
-    methods: {
-      demo8doClose () {
-        this.$vux.loading.show({
-          text: 'processing'
-        })
-        setTimeout(() => {
-          this.$vux.loading.hide()
-          this.show8 = false
-        }, 1000)
-      },
-      console (msg) {
-        console.log(msg)
-      },
-      click (key) {
-        console.log(key)
-      },
-      onDelete () {
-        this.showSuccess = true
+          label: 'Fish',
+          value: '8.00'
+        }]
       }
     }
   }
 </script>
 
 <style>
-    .popup0 {
-        padding-bottom: 15px;
-        height: 200px;
-    }
-
-    .popup1 {
+    .item-wrapper {
+        position: absolute;
         width: 100%;
-        height: 100%;
+        height: 84%;
+        overflow: hidden;
     }
 </style>

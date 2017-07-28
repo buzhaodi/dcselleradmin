@@ -125,4 +125,7 @@
     body {
         background-color: #fbf9fe;
     }
+    .weui-tabbar {
+        position: absolute;
+    }
 </style>
