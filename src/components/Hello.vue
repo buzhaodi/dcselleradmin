@@ -2,32 +2,23 @@
     <div class="item-wrapper" ref="wrapper">
         <ul>
             <group>
-                <cell title="Total" value="￥1024"></cell>
+                <cell title="总金额（未支付)" value="￥1024"></cell>
                 <cell-form-preview :list="list"></cell-form-preview>
-
-            </group>
-
-            <group>
-                <cell title="Total" value="￥1024"></cell>
-                <cell-form-preview :list="list"></cell-form-preview>
-
-            </group>
-            <group>
-                <cell title="Total" value="￥1024"></cell>
-                <cell-form-preview :list="list"></cell-form-preview>
-
-            </group>
-            <group>
-                <cell title="Total" value="￥1024"></cell>
-                <cell-form-preview :list="list"></cell-form-preview>
-
+                    <flexbox>
+                    <flexbox-item>
+                        <x-button type="warn">退单</x-button>
+                    </flexbox-item>
+                    <flexbox-item>
+                        <x-button type="primary" @click.native="agree(222,$event)">完成</x-button>
+                    </flexbox-item>
+                </flexbox>
             </group>
         </ul>
     </div>
 </template>
 
 <script>
-  import {CellFormPreview, Cell, TransferDom, Actionsheet, Group, XSwitch, Toast} from 'vux'
+  import {XButton, Flexbox, FlexboxItem, CellFormPreview, Cell, TransferDom, Actionsheet, Group, XSwitch, Toast} from 'vux'
   import Bscroll from '../../node_modules/better-scroll'
 
   export default {
@@ -37,7 +28,10 @@
       XSwitch,
       Toast,
       CellFormPreview,
-      Cell
+      Cell,
+      XButton,
+      Flexbox,
+      FlexboxItem
     },
     directives: {
       TransferDom
@@ -62,6 +56,14 @@
           value: '8.00'
         }]
       }
+    },
+    methods: {
+      agree (id, event) {
+        if (!event._constructed) {
+          return
+        }
+        console.log(id)
+      }
     }
   }
 </script>
@@ -73,4 +75,5 @@
         height: 90%;
         overflow: hidden;
     }
+
 </style>

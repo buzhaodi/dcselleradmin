@@ -7,9 +7,9 @@
             </div>
         </div>
 
-
+        <transition name="fade">
         <router-view></router-view>
-
+        </transition>
         <tabbar class="vux-demo-tabbar" icon-class="vux-center" slot="bottom">
             <tabbar-item :link="{path:'/'}" :badge=countsellerdui>
                 <span class="iconfontyyy vux-demo-tabbar-icon-home" slot="icon"
@@ -127,4 +127,14 @@
     .weui-tabbar {
         position: absolute;
     }
+
+    .fade-enter-active, .fade-leave-active{
+        transition: opacity .2s
+    }
+
+
+    .fade-enter, .fade-leave-to {
+        opacity: 0
+    }
+
 </style>

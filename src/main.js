@@ -4,6 +4,8 @@ import Vue from 'vue'
 import FastClick from 'fastclick'
 import VueRouter from 'vue-router'
 import App from './App'
+// 登陆页
+import Login from './components/Login/Login.vue'
 // 首页组件
 import Home from './components/Hello.vue'
 // 商家设置页组件
@@ -36,6 +38,10 @@ const routes = [{
 {
   path: '/sellerseting',
   component: Sellersetting
+},
+{
+  path: '/login',
+  component: Login
 },
 {
   path: '/sellerseting/Typecontroller',
