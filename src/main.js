@@ -85,6 +85,8 @@ store.registerModule('vux', {
     }
   }
 })
+Vue.use(AjaxPlugin)
+AjaxPlugin.$http.defaults.withCredentials = true
 
 Vue.use(vuexI18n.plugin, store)
 
@@ -94,11 +96,11 @@ Vue.use(AlertPlugin)
 Vue.use(ConfirmPlugin)
 Vue.use(LoadingPlugin)
 Vue.use(WechatPlugin)
-Vue.use(AjaxPlugin)
 Vue.use(LocalePlugin)
 Vue.use(DatetimePlugin)
 Vue.use(BusPlugin)
-
+// 定义跟网站常量
+Vue.prototype.SERVERDOMIAN = 'http://127.0.0.1:999'
 new Vue({
   router,
   render: h => h(App)

@@ -6,10 +6,8 @@
             </center>
 
             <group>
-                <x-textarea title="用户名" v-model="login.username" placeholder="填写用户名" :show-counter="false" :rows="1" autosize></x-textarea>
-
-                <x-textarea  v-model="login.pwd" title="密码" placeholder="填写密码" :show-counter="false" :rows="1" autosize></x-textarea>
-
+                <x-input title="用户名" required type="text" placeholder="填写用户名" v-model="login.username" :min="1" :max="25"  ></x-input>
+                <x-input title="请输入密码"  required type="password" placeholder="最小6位" v-model="login.pwd" :min="6" :max="25"  ></x-input>
             </group>
             <group>
             <x-button type="primary"  @click.native="submit" >登  陆</x-button>
@@ -19,28 +17,22 @@
 </template>
 
 <script>
-  import {AjaxPlugin, XButton, Selector, XTextarea, Tab, TabItem, Divider, TransferDom, Actionsheet, Group, XSwitch, Toast} from 'vux'
-  import Vue from 'vue'
-  Vue.use(AjaxPlugin)
-
+  import {XInput, XButton, Selector, XTextarea, Divider, TransferDom, Group, XSwitch, Toast} from 'vux'
+  import VueRouter from 'vue-router'
+  const router = new VueRouter()
   export default {
     components: {
-      Actionsheet,
       Group,
       XSwitch,
       Toast,
-      TabItem,
-      Tab,
       Divider,
       XTextarea,
       Selector,
-      XButton
+      XButton,
+      XInput
     },
     directives: {
       TransferDom
-    },
-    created () {
-
     },
     data () {
       return {
@@ -49,15 +41,18 @@
     },
     methods: {
       check (event) {
-        this.activetab = event
+        console.log(event)
       },
       submit (event) {
-        this.$http.post('http://127.0.0.1:999/api/login', this.login).then(({data}) => {
+        this.$http.post(this.SERVERDOMIAN + '/api/login', this.login).then(({data}) => {
           console.log(data)
-          if (data.status === 'error') {
-            console.log(data.msg)
+          if (data.status === 'success') {
+            router.push(-1)
           } else {
-            console.log(data.msg)
+            this.$vux.alert.show({
+              title: '登录失败',
+              content: data.msg
+            })
           }
         })
 
@@ -81,7 +76,7 @@
         width: 100%;
         height: 100%;
         overflow: hidden;
-        z-index: 99990;
+        z-index: 1000;
         background: #FBF9FE;
         top: 0;
     }

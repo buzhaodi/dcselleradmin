@@ -45,6 +45,8 @@
     Cell,
     TransferDomDirective as TransferDom
   } from 'vux'
+  import VueRouter from 'vue-router'
+  const router = new VueRouter()
 
   export default {
     name: 'app',
@@ -77,6 +79,13 @@
       changeLocale (data) {
         console.log(data)
       }
+    },
+    created () {
+      this.$http.post(this.SERVERDOMIAN + '/api/login/islogin').then(({data}) => {
+        if (data.status !== 'success') {
+          router.push('/login')
+        }
+      })
     }
 
   }
