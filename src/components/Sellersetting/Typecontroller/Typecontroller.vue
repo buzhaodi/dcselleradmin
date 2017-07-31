@@ -1,6 +1,6 @@
 <template>
     <div class="item-wrapper" ref="wrapper">
-        <div>
+<div>
             <tab :animate="false">
                 <tab-item active-class="active-6-1" selected @on-item-click="check">常规</tab-item>
                 <tab-item active-class="active-6-2"  @on-item-click="check">满减</tab-item>
@@ -17,7 +17,6 @@
 
             </group>
             <x-button type="primary" plain @click.native="submit" >添加</x-button>
-
 
 
 
@@ -44,8 +43,8 @@
                 </tbody>
             </x-table>
 
-        </div>
 
+</div>
     </div>
 </template>
 
@@ -76,10 +75,10 @@
     created () {
       this.$http.get(this.SERVERDOMIAN + '/api/sellersetting/gettype').then(({data}) => {
         this.type = data
-      })
-      this.$nextTick(() => {
-        this.itmescroll = new Bscroll(this.$refs['wrapper'], {
-          click: true
+        this.$nextTick(() => {
+          this.itmescroll = new Bscroll(this.$refs['wrapper'], {
+            click: true
+          })
         })
       })
     },
@@ -118,12 +117,12 @@
           return
         }
         this.addtype.type = this.activetab === 0 ? -1 : this.activetab
-
+        let that = this
         this.$http.post(this.SERVERDOMIAN + '/api/sellersetting/addtype', this.addtype).then(({data}) => {
           if (data.status === 'success') {
-            this.addtype.id = data.id
-            this.type.push(this.addtype)
-            this.addtype.id = ''
+            that.$http.get(that.SERVERDOMIAN + '/api/sellersetting/gettype').then(({data}) => {
+              that.type = data
+            })
             this.$vux.alert.show({
               title: '添加成功',
               content: data.msg
@@ -157,14 +156,13 @@
             console.log('plugin cancel')
           },
           onConfirm () {
-            that.$http.get(this.SERVERDOMIAN + '/api/sellersetting/delete/id/' + id).then((data) => {
+            that.$http.get(that.SERVERDOMIAN + '/api/sellersetting/delete/id/' + id).then(({data}) => {
               if (data.status === 'success') {
-                that.$http.get(this.SERVERDOMIAN + '/api/sellersetting/gettype').then(({data}) => {
-                  this.type = data
+                that.$http.get(that.SERVERDOMIAN + '/api/sellersetting/gettype').then(({data}) => {
+                  that.type = data
                 })
-                console.log(1)
               } else {
-                this.$vux.alert.show({
+                that.$vux.alert.show({
                   title: '删除失败，请联系管理员',
                   content: data.msg
                 })
@@ -173,6 +171,7 @@
           }
         })
       }
+
     }
   }
 
@@ -182,7 +181,7 @@
     .item-wrapper {
         position: absolute;
         width: 100%;
-        height: 90%;
+        height: 85%;
         overflow: hidden;
     }
 </style>

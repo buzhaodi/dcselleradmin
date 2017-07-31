@@ -12,6 +12,8 @@ import Home from './components/Hello.vue'
 import Sellersetting from './components/Sellersetting/Sellersetting'
 // 商家分类页面
 import Typecontroller from './components/Sellersetting/Typecontroller/Typecontroller.vue'
+// 菜品管理页
+import Menu from './components/Menu/Menu.vue'
 import vuexI18n from 'vuex-i18n'
 import Vuex from 'vuex'
 // plugins
@@ -42,6 +44,10 @@ const routes = [{
 {
   path: '/login',
   component: Login
+},
+{
+  path: '/menu',
+  component: Menu
 },
 {
   path: '/sellerseting/Typecontroller',
@@ -100,7 +106,7 @@ Vue.use(LocalePlugin)
 Vue.use(DatetimePlugin)
 Vue.use(BusPlugin)
 // 定义跟网站常量
-Vue.prototype.SERVERDOMIAN = 'http://127.0.0.1:999'
+Vue.prototype.SERVERDOMIAN = 'http://192.168.1.91:999'
 new Vue({
   router,
   render: h => h(App)

@@ -17,7 +17,7 @@
                 <span slot="label">点餐队列</span>
             </tabbar-item>
 
-            <tabbar-item :link="{path:'/demo'}">
+            <tabbar-item :link="{path:'/menu'}">
                 <span class="iconfontyyy" slot="icon"
                       style="font-size: 24px;position: relative;top: -4px">&#xe604;</span>
                 <span slot="label"><span>添加菜品</span></span>
