@@ -5,8 +5,9 @@
                 <popup-picker @on-change="chengtype" title="请选择种类" :data="typelist" :columns="3" v-model="typeid" ref="picker3" show-name></popup-picker>
                 <x-button type="primary" @click.native="toadd" >添加 {{$refs.picker3&&$refs.picker3.getNameValues()}} 菜品</x-button>
             </group>
-            <panel header="菜单列表"  :list="list" :type="type"></panel>
+            <panel header="菜单列表" @on-click-item="dellfoods"  :list="list" :type="type"></panel>
         </div>
+
     </div>
 </template>
 
@@ -77,6 +78,9 @@
             })
           })
         })
+      },
+      dellfoods (item) {
+        router.push({path: '/menu/add', query: item})
       }
     }
   }

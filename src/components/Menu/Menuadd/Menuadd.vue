@@ -52,7 +52,14 @@
         this.itmescroll = new Bscroll(this.$refs['wrapper'], {
           click: true
         })
-        this.typeid = this.$route.query.typeid
+        if (this.$route.query.name) {
+          this.typeid = ['', this.$route.query.type]
+          this.topost = this.$route.query
+          this.images = [{url: this.$route.query.image, urlsmall: this.$route.query.icon}]
+          console.log(this.$route.query)
+        } else {
+          this.typeid = this.$route.query.typeid
+        }
       })
     },
     data () {
