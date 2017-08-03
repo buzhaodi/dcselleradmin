@@ -2,23 +2,23 @@
     <div class="item-wrapper" ref="wrapper">
         <div>
             <group title="选择种类">
-                <popup-picker title="请选择种类" :data="typelist" :columns="3" v-model="typeid" ref="picker3" show-name></popup-picker>
-                <cell title="您选择的种类" @click.native="test" :value="$refs.picker3&&$refs.picker3.getNameValues()"></cell>
+                <popup-picker @on-change="chengtype" title="请选择种类" :data="typelist" :columns="3" v-model="typeid" ref="picker3" show-name></popup-picker>
+                <x-button type="primary" @click.native="toadd" >添加 {{$refs.picker3&&$refs.picker3.getNameValues()}} 菜品</x-button>
             </group>
-
+            <panel header="菜单列表"  :list="list" :type="type"></panel>
         </div>
     </div>
 </template>
 
 <script>
-  import {PopupPicker, Picker, Divider, XButton, Flexbox, FlexboxItem, CellFormPreview, Cell, TransferDom, Actionsheet, Group, XSwitch, Toast} from 'vux'
+  import {Panel, PopupPicker, Picker, Divider, XButton, Flexbox, FlexboxItem, CellFormPreview, Cell, TransferDom, Actionsheet, Group, Toast} from 'vux'
   import Bscroll from '../../../node_modules/better-scroll'
-
+  import VueRouter from 'vue-router'
+  const router = new VueRouter()
   export default {
     components: {
       Actionsheet,
       Group,
-      XSwitch,
       Toast,
       CellFormPreview,
       Cell,
@@ -27,16 +27,18 @@
       FlexboxItem,
       PopupPicker,
       Picker,
-      Divider
+      Divider,
+      Panel
     },
     directives: {
       TransferDom
     },
     created () {
       this.$http.get(this.SERVERDOMIAN + '/api/menu/gettype').then(({data}) => {
-        console.log(data)
-        console.log(this.list3)
         this.typelist = data
+      })
+      this.$http.get(this.SERVERDOMIAN + '/api/menu/getfoods').then(({data}) => {
+        this.list = data
       })
       this.$nextTick(() => {
         this.itmescroll = new Bscroll(this.$refs['wrapper'], {
@@ -47,7 +49,9 @@
     data () {
       return {
         typeid: [],
-        typelist: []
+        typelist: [],
+        type: '1',
+        list: []
       }
     },
     methods: {
@@ -57,8 +61,22 @@
         }
         console.log(id)
       },
-      test () {
-        console.log(this.typeid)
+      toadd () {
+        if (!event._constructed) {
+          return
+        }
+        router.push({path: '/menu/add', query: { typeid: this.typeid }})
+      },
+      chengtype (num) {
+        console.log(num)
+        this.$http.get(this.SERVERDOMIAN + '/api/menu/getfoods/typeid/' + num[1]).then(({data}) => {
+          this.list = data
+          this.$nextTick(() => {
+            this.itmescroll = new Bscroll(this.$refs['wrapper'], {
+              click: false
+            })
+          })
+        })
       }
     }
   }

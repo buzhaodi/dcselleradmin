@@ -14,6 +14,8 @@ import Sellersetting from './components/Sellersetting/Sellersetting'
 import Typecontroller from './components/Sellersetting/Typecontroller/Typecontroller.vue'
 // 菜品管理页
 import Menu from './components/Menu/Menu.vue'
+// 添加菜品组件
+import Menuadd from './components/Menu/Menuadd/Menuadd.vue'
 import vuexI18n from 'vuex-i18n'
 import Vuex from 'vuex'
 // plugins
@@ -48,6 +50,10 @@ const routes = [{
 {
   path: '/menu',
   component: Menu
+},
+{
+  path: '/menu/add',
+  component: Menuadd
 },
 {
   path: '/sellerseting/Typecontroller',
