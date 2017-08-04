@@ -25,51 +25,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Menu.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Menu/Menu.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="94" column="35" lean-forward="false" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="43" />
+              <folding>
+                <element signature="e#806#957#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="114" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sellersetting.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Sellersetting/Sellersetting.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1431">
+              <caret line="55" column="25" lean-forward="false" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Typecontroller.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Sellersetting/Typecontroller/Typecontroller.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="839">
-              <caret line="126" column="28" lean-forward="false" selection-start-line="126" selection-start-column="28" selection-end-line="126" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="63" column="28" lean-forward="false" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="114" column="49" lean-forward="false" selection-start-line="114" selection-start-column="49" selection-end-line="114" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Menuadd.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Menu/Menuadd/Menuadd.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="57" column="90" lean-forward="false" selection-start-line="57" selection-start-column="90" selection-end-line="57" selection-end-column="90" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Menu.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Menu/Menu.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="3078">
+              <caret line="116" column="16" lean-forward="false" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -86,12 +78,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>vuex-i18n</find>
-      <find>$t</find>
-      <find>i18n</find>
-      <find>html</find>
-      <find>shar</find>
-      <find>test</find>
       <find>isTabbarDemo</find>
       <find>selected</find>
       <find>on-item-click</find>
@@ -110,6 +96,18 @@
       <find>images</find>
       <find>url</find>
       <find>addfrom</find>
+      <find>currentOptions</find>
+      <find>options</find>
+      <find>uuid</find>
+      <find>currentValue</find>
+      <find>getKey</find>
+      <find>disabled</find>
+      <find>onItemClick</find>
+      <find>panel2</find>
+      <find>weui-media-box__hd</find>
+      <find>onButtonClick</find>
+      <find>selector</find>
+      <find>chengtype</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -137,9 +135,13 @@
         <option value="$PROJECT_DIR$/node_modules/vux-uploader/src/components/uploader.vue" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/components/Sellersetting/Typecontroller/Typecontroller.vue" />
-        <option value="$PROJECT_DIR$/src/components/Menu/Menu.vue" />
-        <option value="$PROJECT_DIR$/src/components/Menu/Menuadd/Menuadd.vue" />
         <option value="$PROJECT_DIR$/src/main.js" />
+        <option value="$PROJECT_DIR$/node_modules/vux/src/components/checklist/index.vue" />
+        <option value="$PROJECT_DIR$/src/components/Menu/Menuadd/Menuadd.vue" />
+        <option value="$PROJECT_DIR$/src/components/Menu/panel/panel.vue" />
+        <option value="$PROJECT_DIR$/src/components/Menu/panel/Panel.vue" />
+        <option value="$PROJECT_DIR$/src/components/Menu/panel/index.vue" />
+        <option value="$PROJECT_DIR$/src/components/Menu/Menu.vue" />
       </list>
     </option>
   </component>
@@ -168,7 +170,7 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -211,58 +213,52 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="dcselleradmin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dcselleradmin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="DCselleradmin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DCselleradmin" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="dcselleradmin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dcselleradmin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="DCselleradmin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DCselleradmin" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="dcselleradmin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dcselleradmin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="dcselleradmin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dcselleradmin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="DCselleradmin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DCselleradmin" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="dcselleradmin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dcselleradmin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Login" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="dcselleradmin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dcselleradmin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="DCselleradmin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DCselleradmin" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Menu" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="dcselleradmin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dcselleradmin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="DCselleradmin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DCselleradmin" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Menu" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Menuadd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Sellersetting" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="DCselleradmin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DCselleradmin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Sellersetting" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Typecontroller" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -279,19 +275,21 @@
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.selected.package.jscs" value="" />
     <property name="standardjs.codestyle.accepted" value="true" />
-    <property name="last_opened_file_path" value="D:/dcadmin" />
+    <property name="last_opened_file_path" value="G:/diancan" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/node_modules/vux/src/mixins/multi-items.js&#10;D:/dcselleradmin/node_modules/vux/src/components/tabbar/tabbar-item.vue&#10;G:/DCselleradmin/node_modules/vux/src/components/masker/index.vue&#10;D:/dcselleradmin/node_modules/vux/src/components/tab/tab-item.vue" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\DCselleradmin\src\components\Menu\panel" />
+      <recent name="G:\DCselleradmin\src\components\Menu" />
       <recent name="D:\dcselleradmin\src\components\Sellersetting\Typecontroller\img" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\DCselleradmin\src\components\Menu" />
+      <recent name="G:\DCselleradmin\src\components\Menu\panel" />
+      <recent name="G:\DCselleradmin\src\components\Menu\Menuadd" />
       <recent name="G:\DCselleradmin\src\components\Menu\Add" />
       <recent name="G:\DCselleradmin\src\components\menu" />
-      <recent name="G:\DCselleradmin\src\components\Sellersetting\img" />
-      <recent name="G:\DCselleradmin\src\components\Login" />
-      <recent name="D:\dcselleradmin\src\components\Sellersetting\img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -407,11 +405,14 @@
       <workItem from="1501466984990" duration="13699000" />
       <workItem from="1501731533892" duration="16661000" />
       <workItem from="1501758122663" duration="4512000" />
+      <workItem from="1501780348908" duration="5881000" />
+      <workItem from="1501816854790" duration="8325000" />
+      <workItem from="1501829088024" duration="2142000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95225000" />
+    <option name="totallyTimeSpent" value="111573000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -423,16 +424,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2835821" sideWeight="0.4948148" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29157782" sideWeight="0.4948148" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13539445" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.265506" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.265506" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29488575" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2835821" sideWeight="0.5051852" order="2" side_tool="true" content_ui="tabs" />
@@ -462,75 +463,11 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="10" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/dev.env.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/vux-loader/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Hello.vue" />
-    <entry file="file://$PROJECT_DIR$/node_modules/vuex-i18n/dist/vuex-i18n.cjs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="348" column="2" lean-forward="false" selection-start-line="348" selection-start-column="2" selection-end-line="348" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/dev-server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="15" column="46" lean-forward="false" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/webpack.prod.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="109" column="19" lean-forward="false" selection-start-line="109" selection-start-column="19" selection-end-line="109" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/vue-loader.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/dev-client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/check-versions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/vux/src/components/cell-form-preview/index.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -592,7 +529,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -609,7 +545,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1053">
           <caret line="41" column="15" lean-forward="false" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -642,7 +577,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1584">
           <caret line="1178" column="0" lean-forward="false" selection-start-line="1178" selection-start-column="0" selection-end-line="1178" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -657,7 +591,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="48" lean-forward="false" selection-start-line="0" selection-start-column="48" selection-end-line="0" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -673,7 +606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -695,14 +627,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/config.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/Sellersetting/Sellersetting.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-965">
-          <caret line="55" column="25" lean-forward="true" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/better-scroll/dist/bscroll.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -730,7 +654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="48" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -746,27 +669,31 @@
     <entry file="file://$PROJECT_DIR$/node_modules/_vux-uploader@0.1.7@vux-uploader/src/components/uploader.vue" />
     <entry file="file://$PROJECT_DIR$/node_modules/_vux-uploader@0.1.7@vux-uploader/src/main.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/vux-uploader/src/components/uploader.vue" />
-    <entry file="file://$PROJECT_DIR$/src/components/Menu/Menu.vue">
+    <entry file="file://$PROJECT_DIR$/node_modules/vux/src/components/check-icon/index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="297">
+          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Menu/Menuadd/Menuadd.vue">
+    <entry file="file://$PROJECT_DIR$/node_modules/vux/src/libs/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="57" column="90" lean-forward="false" selection-start-line="57" selection-start-column="90" selection-end-line="57" selection-end-column="90" />
-          <folding />
+        <state relative-caret-position="135">
+          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Sellersetting/Typecontroller/Typecontroller.vue">
+    <entry file="file://$PROJECT_DIR$/node_modules/vux/src/components/panel/metas.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="839">
-          <caret line="126" column="28" lean-forward="false" selection-start-line="126" selection-start-column="28" selection-end-line="126" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/vux/src/components/panel/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3159">
+          <caret line="117" column="0" lean-forward="true" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -778,11 +705,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="617" column="23" lean-forward="false" selection-start-line="617" selection-start-column="23" selection-end-line="617" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/dev-server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="82" column="17" lean-forward="false" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/vux/src/components/checklist/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4209">
+          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Sellersetting/Typecontroller/Typecontroller.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3078">
+          <caret line="116" column="16" lean-forward="false" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Sellersetting/Sellersetting.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1431">
+          <caret line="55" column="25" lean-forward="false" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Menu/panel/Panel.vue" />
+    <entry file="file://$PROJECT_DIR$/src/components/Menu/panel/Panel.vue" />
+    <entry file="file://$PROJECT_DIR$/src/components/Menu/panel/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-922">
+          <caret line="15" column="93" lean-forward="false" selection-start-line="15" selection-start-column="93" selection-end-line="15" selection-end-column="93" />
+          <folding>
+            <element signature="e#2344#2417#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Menu/Menuadd/Menuadd.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="114" column="49" lean-forward="false" selection-start-line="114" selection-start-column="49" selection-end-line="114" selection-end-column="49" />
+        <state relative-caret-position="405">
+          <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="114" selection-end-column="54" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Menu/Menu.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="94" column="35" lean-forward="false" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="43" />
+          <folding>
+            <element signature="e#806#957#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

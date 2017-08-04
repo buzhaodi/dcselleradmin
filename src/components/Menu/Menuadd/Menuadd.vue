@@ -19,6 +19,10 @@
                  ></uploader>
                  <x-button type="primary" @click.native="addcai">确定</x-button>
              </group>
+             <br>
+             <br>
+             <br>
+
          </div>
     </div>
 </template>
